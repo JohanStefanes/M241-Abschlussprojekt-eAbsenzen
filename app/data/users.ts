@@ -1,0 +1,58 @@
+import type { Role } from "./absences";
+
+// Demo-Benutzer für den Prototyp. Passwörter im Klartext – NUR für den Prototyp,
+// in einer echten Anwendung niemals so speichern (Hashing, z.B. bcrypt/argon2).
+export type User = {
+  username: string;
+  password: string;
+  role: Role;
+  displayName: string;
+  studentName?: string; // für Lernende/Eltern: zugeordnete:r Lernende:r
+};
+
+export const users: User[] = [
+  {
+    username: "lena.meier",
+    password: "lena2026",
+    role: "lernende",
+    displayName: "Lena Meier",
+    studentName: "Lena Meier",
+  },
+  {
+    username: "tim.suter",
+    password: "tim2026",
+    role: "lernende",
+    displayName: "Tim Suter",
+    studentName: "Tim Suter",
+  },
+  {
+    username: "fam.meier",
+    password: "eltern2026",
+    role: "eltern",
+    displayName: "Familie Meier",
+    studentName: "Lena Meier",
+  },
+  {
+    username: "fam.suter",
+    password: "eltern2026",
+    role: "eltern",
+    displayName: "Familie Suter",
+    studentName: "Tim Suter",
+  },
+  {
+    username: "b.brunner",
+    password: "lehrer2026",
+    role: "lehrperson",
+    displayName: "Beat Brunner",
+  },
+];
+
+export function getUserByUsername(username: string): User | undefined {
+  return users.find((u) => u.username === username);
+}
+
+export function verifyUser(username: string, password: string): User | undefined {
+  const user = getUserByUsername(username);
+  if (!user || user.password !== password) return undefined;
+  return user;
+}

@@ -1,0 +1,51 @@
+============================================================
+ eAbsenzen – Testzugänge (Prototyp)
+ BBW Winterthur · Informatik & Naturwissenschaft · Modul 241
+============================================================
+
+Login-Seite:  http://localhost:5173/login
+
+Hinweis: Dies ist ein Prototyp. Die Passwörter sind absichtlich
+einfach und im Klartext hinterlegt. In einer echten Anwendung
+würden Passwörter niemals so gespeichert (Hashing erforderlich).
+
+------------------------------------------------------------
+ LERNENDE
+------------------------------------------------------------
+Benutzername:  lena.meier
+Passwort:      lena2026
+Sieht:         eigene Absenzen von Lena Meier
+               (begründen, Beleg anhängen, unterschreiben)
+
+Benutzername:  tim.suter
+Passwort:      tim2026
+Sieht:         eigene Absenzen von Tim Suter
+
+------------------------------------------------------------
+ ELTERN
+------------------------------------------------------------
+Benutzername:  fam.meier
+Passwort:      eltern2026
+Sieht:         Absenzen des Kindes Lena Meier (bestätigen)
+
+Benutzername:  fam.suter
+Passwort:      eltern2026
+Sieht:         Absenzen des Kindes Tim Suter (bestätigen)
+
+------------------------------------------------------------
+ LEHRPERSON
+------------------------------------------------------------
+Benutzername:  b.brunner
+Passwort:      lehrer2026
+Sieht:         alle Absenzen, erfasst neue, entscheidet final
+               (entschuldigt / unentschuldigt)
+
+============================================================
+ Empfohlener Demo-Ablauf
+============================================================
+1. Als b.brunner anmelden  -> neue Absenz erfassen (Status: offen)
+2. Als lena.meier anmelden -> begründen + unterschreiben
+3. Als fam.meier anmelden  -> bestätigen
+4. Als b.brunner anmelden  -> als entschuldigt/unentschuldigt
+                              entscheiden
+============================================================
