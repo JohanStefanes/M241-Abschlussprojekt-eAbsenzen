@@ -1,10 +1,20 @@
 # eAbsenzen
 
-Digitale Absenzenverwaltung – Prototyp für **Modul 241**, BBW Winterthur
-(Abteilung Informatik & Naturwissenschaft).
+Digitale Absenzenverwaltung – **Abschlussprojekt Modul 241**, BBW Winterthur
+(Abteilung Informatik & Naturwissenschaft). Gruppe: Johan Stefanes & Julian Scherrer.
 
 Ersetzt das Papier-Absenzenbüchlein durch einen durchgängigen, digitalen Prozess
 für drei Rollen: **Lernende**, **Eltern** und **Lehrperson**.
+
+## Projektdokumentation
+
+Die vollständige Projektarbeit (Idee, PESTEL, Stakeholder, Marktforschung,
+Erfolgsmessung, Risiko, Geschäftsmodell, Prototyp-Tests, Präsentation) liegt im
+Ordner [`dokumentation/`](./dokumentation/):
+
+- **[Abschlussprojekt_Dokumentation.pdf](./dokumentation/Abschlussprojekt_Dokumentation.pdf)** – die abgabefertige Doku (Abschnitte 1–9)
+- **[Praesentation_Briefing.pdf](./dokumentation/Praesentation_Briefing.pdf)** – Briefing für die Präsentation
+- Aufgabenstellung (`04.0_Projekt-Idea.pdf`, `04_GA_…pdf`)
 
 ## Status-Workflow
 
