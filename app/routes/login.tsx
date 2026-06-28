@@ -5,7 +5,7 @@ import { verifyUser } from "~/data/users";
 import { createUserSession, getCurrentUser } from "~/session.server";
 
 export function meta() {
-  return [{ title: "Anmelden – eAbsenzen" }];
+  return [{ title: "Anmelden - eAbsenzen" }];
 }
 
 export async function loader({ request }: Route.LoaderArgs) {

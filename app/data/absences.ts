@@ -1,15 +1,13 @@
-// In-Memory-Datenhaltung für den Prototyp (keine Datenbank).
-// Hinweis: Bei SSR bleibt dieses Modul über Requests hinweg im Speicher,
-// daher wirken die Mutatoren wie ein einfacher "Server-State".
+// Daten liegen im Speicher, keine DB im Prototyp.
 
 export type Role = "lernende" | "lehrperson" | "eltern";
 
 export type AbsenceStatus =
-  | "offen" // von Lehrperson erfasst
-  | "lernende_bestaetigt" // Lernende hat begründet/unterschrieben
-  | "eltern_bestaetigt" // Eltern haben bestätigt
-  | "entschuldigt" // final durch Lehrperson
-  | "unentschuldigt"; // final durch Lehrperson
+  | "offen" // Lehrperson hat erfasst
+  | "lernende_bestaetigt" // unterschrieben
+  | "eltern_bestaetigt" // Eltern ok
+  | "entschuldigt"
+  | "unentschuldigt"; // beides: Entscheid Lehrperson
 
 export type HistoryEntry = {
   at: string;
@@ -21,7 +19,7 @@ export type Absence = {
   id: string;
   studentName: string;
   date: string; // "2026-06-22"
-  lessons: string; // z.B. "3.–4. Lektion"
+  lessons: string; // z.B. "3.-4. Lektion"
   lessonCount: number;
   moduleId: string; // ICT-Modul, z.B. "M319" (siehe modules.ts)
   teacher: string;
@@ -38,7 +36,7 @@ export type Stats = {
   quoteUnentschuldigt: number; // 0..100
 };
 
-// "Eingeloggte" Lernende im Prototyp (kein echtes Auth).
+// aktuell "eingeloggte" Lernende (kein echtes Login)
 export const CURRENT_STUDENT = "Lena Meier";
 
 const STATUS_LABELS: Record<AbsenceStatus, string> = {
@@ -62,7 +60,7 @@ const absences: Absence[] = [
     id: "1",
     studentName: CURRENT_STUDENT,
     date: "2026-06-15",
-    lessons: "1.–2. Lektion",
+    lessons: "1.-2. Lektion",
     lessonCount: 2,
     moduleId: "M319",
     teacher: "Herr Brunner",
@@ -73,7 +71,7 @@ const absences: Absence[] = [
     id: "2",
     studentName: CURRENT_STUDENT,
     date: "2026-06-10",
-    lessons: "5.–6. Lektion",
+    lessons: "5.-6. Lektion",
     lessonCount: 2,
     moduleId: "M295",
     teacher: "Frau Keller",
@@ -110,7 +108,7 @@ const absences: Absence[] = [
     id: "4",
     studentName: CURRENT_STUDENT,
     date: "2026-05-20",
-    lessons: "7.–8. Lektion",
+    lessons: "7.-8. Lektion",
     lessonCount: 2,
     moduleId: "M122",
     teacher: "Frau Vogt",
@@ -120,7 +118,7 @@ const absences: Absence[] = [
       {
         at: "2026-05-27",
         by: "lehrperson",
-        action: "Frist abgelaufen – unentschuldigt",
+        action: "Frist abgelaufen - unentschuldigt",
       },
     ],
   },
@@ -247,7 +245,7 @@ export function getStats(list: Absence[]): Stats {
   return { totalLektionen, anzahlOffen, anzahlUnentschuldigt, quoteUnentschuldigt };
 }
 
-// Erlaubte Aktionen pro Rolle/Status – steuert, welche Buttons/Forms erscheinen.
+// welche Aktion ist je Rolle und Status erlaubt
 export function nextActionsFor(role: Role, status: AbsenceStatus): string[] {
   if (role === "lernende") return status === "offen" ? ["unterschreiben"] : [];
   if (role === "eltern")
@@ -257,8 +255,7 @@ export function nextActionsFor(role: Role, status: AbsenceStatus): string[] {
   return [];
 }
 
-// Fristenlogik: Absenzen müssen innert DEADLINE_DAYS bestätigt werden,
-// sonst droht "unentschuldigt". Abgeschlossene Absenzen haben keine Frist.
+// Frist: innert DEADLINE_DAYS bestätigen, sonst unentschuldigt.
 const DEADLINE_DAYS = 14;
 
 export function deadlineFor(a: Absence): string | undefined {
@@ -268,7 +265,7 @@ export function deadlineFor(a: Absence): string | undefined {
   return d.toISOString().slice(0, 10);
 }
 
-// Tage bis zum Datum (negativ = in der Vergangenheit / überfällig).
+// Tage bis zum Datum (negativ = überfällig)
 export function daysUntil(dateStr: string): number {
   const now = new Date();
   now.setHours(0, 0, 0, 0);

@@ -119,7 +119,7 @@ export default function App({ loaderData }: Route.ComponentProps) {
 
       <footer className="border-t border-slate-200 bg-white">
         <div className="container mx-auto px-4 py-4 text-center text-xs text-slate-400">
-          eAbsenzen · Prototyp · BBW Winterthur – Informatik &amp;
+          eAbsenzen · Prototyp · BBW Winterthur - Informatik &amp;
           Naturwissenschaft · Modul 241
         </div>
       </footer>

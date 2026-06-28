@@ -7,7 +7,7 @@ import { StatusBadge } from "./StatusBadge";
 
 function DeadlineCell({ absence }: { absence: Absence }) {
   const deadline = deadlineFor(absence);
-  if (!deadline) return <span className="text-slate-300">–</span>;
+  if (!deadline) return <span className="text-slate-300">-</span>;
 
   const days = daysUntil(deadline);
   if (days < 0) {

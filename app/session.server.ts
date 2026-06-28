@@ -29,8 +29,7 @@ export async function getCurrentUser(
   return getUserByUsername(username);
 }
 
-// Erzwingt eine Anmeldung (optional eine bestimmte Rolle).
-// Bei fehlender Anmeldung → /login, bei falscher Rolle → eigenes Dashboard.
+// verlangt Login (optional eine Rolle), sonst Redirect
 export async function requireUser(
   request: Request,
   role?: Role,

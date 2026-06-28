@@ -1,7 +1,6 @@
 import type { Role } from "./absences";
 
-// Demo-Benutzer für den Prototyp. Passwörter im Klartext – NUR für den Prototyp,
-// in einer echten Anwendung niemals so speichern (Hashing, z.B. bcrypt/argon2).
+// Demo-User. Passwörter im Klartext - ok fürs Proto, echt müsste man sie hashen.
 export type User = {
   username: string;
   password: string;

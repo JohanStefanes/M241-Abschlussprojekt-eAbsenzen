@@ -4,7 +4,7 @@ import { requireUser } from "~/session.server";
 import { PageHeader } from "~/components/PageHeader";
 
 export function meta() {
-  return [{ title: "Module – eAbsenzen" }];
+  return [{ title: "Module - eAbsenzen" }];
 }
 
 export async function loader({ request }: Route.LoaderArgs) {
@@ -45,7 +45,7 @@ export default function ModulePage() {
 
       <p className="text-xs text-slate-400">
         Quelle: Modulbaukasten ICT-Berufsbildung Schweiz
-        (modulbaukasten.ch). Repräsentative Auswahl – an den Modulplan der BBW
+        (modulbaukasten.ch). Repräsentative Auswahl - an den Modulplan der BBW
         anpassbar.
       </p>
     </div>

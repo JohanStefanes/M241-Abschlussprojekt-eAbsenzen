@@ -32,8 +32,8 @@ export function AbsenceDetail({ absence }: { absence: Absence }) {
         <Field label="Lernende" value={absence.studentName} />
         <Field label="Lehrperson" value={absence.teacher} />
         <Field label="Lektionen" value={`${absence.lessons} (${absence.lessonCount})`} />
-        <Field label="Begründung" value={absence.reason ?? "–"} />
-        <Field label="Beleg" value={absence.documentName ?? "–"} />
+        <Field label="Begründung" value={absence.reason ?? "-"} />
+        <Field label="Beleg" value={absence.documentName ?? "-"} />
       </dl>
 
       <div>

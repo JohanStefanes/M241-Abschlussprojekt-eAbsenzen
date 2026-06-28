@@ -1,4 +1,4 @@
-# Modul 241 – Abschlussprojekt: "eAbsenzen"
+# Modul 241 - Abschlussprojekt: "eAbsenzen"
 
 **Datum:** Juni 2026 · **Schule:** BBW Winterthur, Abteilung Informatik
 
@@ -9,7 +9,7 @@
 | **Johan Stefanes** | Projektleitung / Story-Teller (Idee, Moderation) · Entwicklung / Demo-Pilot (Prototyp, Architektur) |
 | **Julian Scherrer** | Markt & Strategie (PESTEL, Marktforschung, Geschäftsmodell) · Qualität & Risiko (Tests, Risikoanalyse, Q&A) |
 
-> Status: Vollständig ausgearbeitet – Abschnitte 1–9.
+> Status: Vollständig ausgearbeitet - Abschnitte 1-9.
 
 ---
 
@@ -42,7 +42,7 @@ zusätzlich **handschriftlich im Papier-Absenzenbüchlein** unterschreiben lasse
 - **Aufwand** für Klassenlehrpersonen/Sekretariat beim Nachverfolgen und Auswerten.
 - Schlechte **Nachvollziehbarkeit**: Wer hat wann was bestätigt? Im Büchlein nicht dokumentiert.
 
-### 1.2 Idee: "eAbsenzen" – die digitale Absenzenverwaltung
+### 1.2 Idee: "eAbsenzen" - die digitale Absenzenverwaltung
 
 **eAbsenzen** ist eine Web-App, die das Papier-Absenzenbüchlein ersetzt und alle Beteiligten in einen
 durchgängigen digitalen Prozess einbindet:
@@ -60,14 +60,14 @@ durchgängigen digitalen Prozess einbindet:
 | Persona | Beschreibung | Bedürfnis |
 |---|---|---|
 | **Lena, 17, Lernende Informatik** | Vergisst oft, das Büchlein rechtzeitig unterschreiben zu lassen | Übersicht über offene Absenzen & Fristen, schnell digital erledigen |
-| **Frau Keller, 45, Klassenlehrperson** | Verwaltet Absenzen der ganzen Klasse, prüft Fristen | Weniger Verwaltungsaufwand, klare Entscheidungsbasis |
+| **Beat Brunner, 45, Klassenlehrer** | Verwaltet Absenzen der ganzen Klasse, prüft Fristen | Weniger Verwaltungsaufwand, klare Entscheidungsbasis |
 | **Eltern (Minderjährige)** | Müssen Absenzen bestätigen, sind im Papierprozess kaum eingebunden | Einfache, ortsunabhängige Online-Bestätigung |
 | **Sekretariat / Schulleitung** | Braucht Auswertungen und Nachvollziehbarkeit | Lückenlose, revisionssichere Dokumentation |
 
 ### 1.4 Value Proposition (Kurzform)
 
 > "eAbsenzen ersetzt das Papier-Absenzenbüchlein: Lernende begründen und unterschreiben Absenzen
-> digital, Eltern bestätigen online und Lehrpersonen entscheiden transparent – schneller,
+> digital, Eltern bestätigen online und Lehrpersonen entscheiden transparent - schneller,
 > nachvollziehbar und ohne verlorene Zettel."
 
 ### 1.5 Kreativitätsmethode
@@ -81,19 +81,19 @@ Sekretariat) einbindet und sich ideal als **React-Framework-Prototyp** (Aufgabe 
 
 ---
 
-## 2. Innovation bewerten – PESTEL-Analyse
+## 2. Innovation bewerten - PESTEL-Analyse
 
 Wir bewerten **eAbsenzen** mit der **PESTEL-Analyse**, um externe Chancen und Risiken zu identifizieren,
 die nicht direkt von uns kontrolliert werden können.
 
 | Faktor | Beobachtung | Chance (C) / Risiko (R) |
 |---|---|---|
-| **P – Political** | Bildungsdirektionen fördern Digitalisierung an Berufsfachschulen; Bildungsverordnungen verlangen eine lückenlose Absenzenkontrolle | C: Rückenwind für digitale Schulprozesse |
-| **E – Economic** | Manuelle Absenzenverwaltung bindet Lehrpersonen-/Sekretariatszeit; Schulen stehen unter Verwaltungs-Kostendruck | C: Effizienzgewinn senkt Verwaltungskosten |
-| **S – Social** | Lernende (Digital Natives) erwarten digitale Prozesse; gleichzeitig Sensibilität bzgl. "Überwachung" | C: Hohe Akzeptanz; R: Sorge um Daten/Kontrolle |
-| **T – Technological** | Praktisch alle besitzen ein Smartphone; bestehende Schulverwaltungs-/LMS-Systeme bieten Schnittstellen | C: Technische Basis (React/React Router, APIs) verfügbar; Integration möglich |
-| **E – Environmental** | Das Papier-Absenzenbüchlein verursacht Papier-/Druckaufwand | C: Papierlose Verwaltung als kleiner Nachhaltigkeitsbeitrag |
-| **L – Legal** | Datenschutz (DSG/DSGVO) bei Minderjährigen; Arztzeugnisse sind **besondere Personendaten**; Aufbewahrungs-/Einwilligungspflichten | R: Erhöhter Aufwand für Datenschutz-Compliance und sichere Beleg-Ablage |
+| **P - Political** | Bildungsdirektionen fördern Digitalisierung an Berufsfachschulen; Bildungsverordnungen verlangen eine lückenlose Absenzenkontrolle | C: Rückenwind für digitale Schulprozesse |
+| **E - Economic** | Manuelle Absenzenverwaltung bindet Lehrpersonen-/Sekretariatszeit; Schulen stehen unter Verwaltungs-Kostendruck | C: Effizienzgewinn senkt Verwaltungskosten |
+| **S - Social** | Lernende (Digital Natives) erwarten digitale Prozesse; gleichzeitig Sensibilität bzgl. "Überwachung" | C: Hohe Akzeptanz; R: Sorge um Daten/Kontrolle |
+| **T - Technological** | Praktisch alle besitzen ein Smartphone; bestehende Schulverwaltungs-/LMS-Systeme bieten Schnittstellen | C: Technische Basis (React/React Router, APIs) verfügbar; Integration möglich |
+| **E - Environmental** | Das Papier-Absenzenbüchlein verursacht Papier-/Druckaufwand | C: Papierlose Verwaltung als kleiner Nachhaltigkeitsbeitrag |
+| **L - Legal** | Datenschutz (DSG/DSGVO) bei Minderjährigen; Arztzeugnisse sind **besondere Personendaten**; Aufbewahrungs-/Einwilligungspflichten | R: Erhöhter Aufwand für Datenschutz-Compliance und sichere Beleg-Ablage |
 
 ### Strategie-Ableitung
 
@@ -101,9 +101,9 @@ die nicht direkt von uns kontrolliert werden können.
    Argument für ein Pilotprojekt an der BBW nutzen; Integration statt Insellösung anstreben.
 2. **Anpassen (Social/Economic):** App auf **Einfachheit & Geschwindigkeit** (wenige Klicks bis zur
    Unterschrift) und klare Fristen-Erinnerungen ausrichten, um Akzeptanz zu sichern.
-3. **Schützen (Legal):** Datenschutz "by design" – minimale Datenerhebung, sichere Ablage von Belegen
+3. **Schützen (Legal):** Datenschutz "by design" - minimale Datenerhebung, sichere Ablage von Belegen
    (besondere Personendaten), Eltern-Einwilligung bei Minderjährigen, Lösch-/Aufbewahrungskonzept.
-4. **Kommunizieren (Social):** Transparenz betonen – Lernende und Eltern sehen jederzeit den
+4. **Kommunizieren (Social):** Transparenz betonen - Lernende und Eltern sehen jederzeit den
    nachvollziehbaren Verlauf; es geht um Service, nicht um Überwachung.
 
 ---
@@ -125,21 +125,21 @@ Informationen fehlen? Welche Bedenken bestehen (v. a. Datenschutz)?
 
 | Stakeholder | Interesse | Einfluss | Erwartung / Bedürfnis | Einbindungsstrategie |
 |---|---|---|---|---|
-| **Lernende** (z. B. Lena) | Hoch | Mittel | Übersicht, Fristen, schnelle digitale Erledigung | **Aktiv einbinden** – Kernnutzer, Usability-Tests, Pilot |
-| **Eltern** (Minderjährige) | Mittel | Mittel | Einfache, ortsunabhängige Online-Bestätigung | **Aktiv einbinden** – einfacher Bestätigungs-Flow, klare Kommunikation |
-| **Lehrpersonen / Klassenlehrperson** | Hoch | Hoch | Weniger Aufwand, klare Entscheidungsbasis | **Eng managen** – Schlüsselrolle, früh in Konzept & Pilot |
-| **Sekretariat / Schulleitung** | Hoch | Hoch | Auswertungen, lückenlose Nachvollziehbarkeit | **Eng managen** – Auftraggeber/Budget, Statistik & Revisionssicherheit |
-| **IT / Datenschutzbeauftragte/r** | Mittel | Hoch | DSG-Konformität, sichere Beleg-Ablage, Integration | **Zufrieden halten** – früh Datenschutzkonzept abstimmen |
-| **Bildungsdirektion** | Niedrig | Hoch | Erfüllung der Absenzenkontroll-Vorgaben | **Informieren** – Rahmenbedingungen, Pilot-Reporting |
+| **Lernende** (z. B. Lena) | Hoch | Mittel | Übersicht, Fristen, schnelle digitale Erledigung | **Aktiv einbinden** - Kernnutzer, Usability-Tests, Pilot |
+| **Eltern** (Minderjährige) | Mittel | Mittel | Einfache, ortsunabhängige Online-Bestätigung | **Aktiv einbinden** - einfacher Bestätigungs-Flow, klare Kommunikation |
+| **Lehrpersonen / Klassenlehrperson** | Hoch | Hoch | Weniger Aufwand, klare Entscheidungsbasis | **Eng managen** - Schlüsselrolle, früh in Konzept & Pilot |
+| **Sekretariat / Schulleitung** | Hoch | Hoch | Auswertungen, lückenlose Nachvollziehbarkeit | **Eng managen** - Auftraggeber/Budget, Statistik & Revisionssicherheit |
+| **IT / Datenschutzbeauftragte/r** | Mittel | Hoch | DSG-Konformität, sichere Beleg-Ablage, Integration | **Zufrieden halten** - früh Datenschutzkonzept abstimmen |
+| **Bildungsdirektion** | Niedrig | Hoch | Erfüllung der Absenzenkontroll-Vorgaben | **Informieren** - Rahmenbedingungen, Pilot-Reporting |
 
 ### 3.3 Erkenntnisse
 
 1. **Schlüssel-Stakeholder** sind Lehrpersonen und Sekretariat/Schulleitung (hoher Einfluss
-   *und* hohes Interesse) – sie müssen das Projekt tragen und werden eng eingebunden.
+   *und* hohes Interesse) - sie müssen das Projekt tragen und werden eng eingebunden.
 2. **Lernende und Eltern** sind die Endnutzer des neuen, im Papierprozess fehlenden
-   Bestätigungswegs – ihre Akzeptanz entscheidet über den Erfolg.
+   Bestätigungswegs - ihre Akzeptanz entscheidet über den Erfolg.
 3. Die drei Kernrollen sind im Prototyp bereits direkt als Sichten abgebildet
-   (`lernende`, `lehrperson`, `eltern`) – die Stakeholder-Struktur spiegelt sich 1:1 im UI.
+   (`lernende`, `lehrperson`, `eltern`) - die Stakeholder-Struktur spiegelt sich 1:1 im UI.
 4. **Datenschutz (IT)** ist trotz mittlerem Interesse wegen des hohen Einflusses früh
    einzubinden (Arztzeugnisse als besondere Personendaten, vgl. PESTEL „Legal").
 
@@ -150,33 +150,33 @@ Informationen fehlen? Welche Bedenken bestehen (v. a. Datenschutz)?
 Die Marktforschung kombiniert **Primärforschung** (eigene Erhebung) und **Sekundärforschung**
 (bestehende Tools/Quellen), um Bedarf und Marktlücke zu belegen.
 
-### 4.1 Primärforschung – Umfrage
+### 4.1 Primärforschung - Umfrage
 
 Geplant ist eine **Online-Umfrage** an der BBW Winterthur unter Lernenden und Lehrpersonen.
 
 - **Leitfrage:** „Wie oft gehen entschuldbare Absenzen verloren, weil das Absenzenbüchlein
   vergessen, verloren oder zu spät vorgelegt wird?"
 - **Zielgruppe / Stichprobe:** ca. 100 Lernende (mehrere Klassen/Lehrjahre) + 15 Lehrpersonen.
-- **Methode:** standardisierter Fragebogen (5–7 geschlossene Fragen, Likert-Skala) plus 2 offene
+- **Methode:** standardisierter Fragebogen (5-7 geschlossene Fragen, Likert-Skala) plus 2 offene
   Fragen zu Aufwand und Verbesserungswünschen.
 - **Erwartete Hypothese:** Ein relevanter Anteil der Lernenden (Annahme > 30 %) hatte schon
   mindestens eine fälschlich unentschuldigte Absenz wegen des Papierprozesses.
 
-### 4.2 Sekundärforschung – bestehende Tools
+### 4.2 Sekundärforschung - bestehende Tools
 
 | Tool | Absenzen-Erfassung | Lernenden-Einbindung | Eltern-Bestätigung | Medienbruch |
 |---|---|---|---|---|
-| **LehrerOffice** | Ja (Lehrpersonen) | Gering | Nein/indirekt | Ja – Unterschrift weiter auf Papier |
+| **LehrerOffice** | Ja (Lehrpersonen) | Gering | Nein/indirekt | Ja - Unterschrift weiter auf Papier |
 | **Schulnetz / Intranet** | Ja (Verwaltung) | Anzeige, kaum Aktion | Nein | Ja |
 | **Papier-Absenzenbüchlein** | Manuell | Unterschrift | Unterschrift | Grundproblem |
-| **eAbsenzen (unser Ansatz)** | Ja | **Begründen + digital unterschreiben** | **Online-Bestätigung** | **Nein – durchgängig digital** |
+| **eAbsenzen (unser Ansatz)** | Ja | **Begründen + digital unterschreiben** | **Online-Bestätigung** | **Nein - durchgängig digital** |
 
 ### 4.3 Erkenntnisse
 
 1. Bestehende Schul-Tools decken die **Erfassung** durch Lehrpersonen gut ab, binden aber
    **Lernende und Eltern nicht durchgängig** in einen digitalen Bestätigungsprozess ein.
 2. Genau hier liegt die **Marktlücke**: kein verbreitetes Tool verbindet digitale Erfassung,
-   Lernenden-Unterschrift und Eltern-Bestätigung medienbruchfrei – das ist die Kernidee von
+   Lernenden-Unterschrift und Eltern-Bestätigung medienbruchfrei - das ist die Kernidee von
    eAbsenzen.
 3. eAbsenzen positioniert sich daher **nicht als Konkurrenz**, sondern als ergänzende Lösung,
    die idealerweise an bestehende Systeme (z. B. LehrerOffice) andocken kann (vgl. Abschnitt 7).
@@ -192,19 +192,19 @@ eine Baseline aus dem heutigen Papierprozess, einen Zielwert und die Erhebungsar
 |---|---|---|---|---|
 | **Fälschlich unentschuldigte Absenzen** | Anteil unentschuldigter Absenzen mit eigentlich gültigem Grund | Annahme ~15 % | **−50 %** im ersten Jahr | App-Statistik (`getStats`) vs. Vorjahr |
 | **Verwaltungszeit** | Minuten pro Klasse/Monat für Absenzen-Nachverfolgung | ~120 min | **−40 %** | Zeitaufschrieb Lehrpersonen/Sekretariat |
-| **Bearbeitungsdauer** | Tage von Erfassung bis Bestätigung | ~7–10 Tage | **< 3 Tage** | Zeitstempel im `history[]`-Verlauf |
+| **Bearbeitungsdauer** | Tage von Erfassung bis Bestätigung | ~7-10 Tage | **< 3 Tage** | Zeitstempel im `history[]`-Verlauf |
 | **Adoptionsrate** | Anteil aktiv genutzter Pilot-Accounts | 0 % | **> 80 %** im Pilot | Login-/Nutzungsdaten |
 | **Fristeinhaltung** | Anteil rechtzeitig bestätigter Absenzen (vor Frist) | unbekannt | **> 90 %** | `deadlineFor` / Fristen-Auswertung |
-| **Break-Even** | Amortisation der Einführungskosten | – | **< 18 Monate** | Kostenrechnung Lizenz vs. eingesparte Zeit |
+| **Break-Even** | Amortisation der Einführungskosten | - | **< 18 Monate** | Kostenrechnung Lizenz vs. eingesparte Zeit |
 
 ### Erkenntnisse
 
 1. Die wichtigsten Erfolgsgrößen sind **weniger fälschlich unentschuldigte Absenzen** und
-   **eingesparte Verwaltungszeit** – beide adressieren direkt das Kernproblem aus Abschnitt 1.
+   **eingesparte Verwaltungszeit** - beide adressieren direkt das Kernproblem aus Abschnitt 1.
 2. Der Prototyp liefert die Datenbasis bereits mit: `getStats()` (Total Fehllektionen, offene
    Fälle, Quote unentschuldigt) und der `history[]`-Verlauf erlauben die Messung ohne Zusatzaufwand.
 3. Der Break-Even wird über das Lizenzmodell (Abschnitt 7) gegen die eingesparte Personalzeit
-   gerechnet – das macht den wirtschaftlichen Nutzen für die Schulleitung greifbar.
+   gerechnet - das macht den wirtschaftlichen Nutzen für die Schulleitung greifbar.
 
 ---
 
@@ -260,7 +260,7 @@ anhand der vier zentralen Dimensionen **Wer? Was? Wie? Wert?** und nutzen die Mu
    Einnahmen; der Nutzen wird über die eingesparte Verwaltungszeit (PESTEL „Economic",
    Abschnitt 5) begründet.
 2. Der **Add-on-Ansatz** senkt die Einstiegshürde, weil eAbsenzen an vorhandene Systeme andockt
-   statt sie zu ersetzen – das adressiert direkt die Konkurrenz- und Integrationsrisiken aus
+   statt sie zu ersetzen - das adressiert direkt die Konkurrenz- und Integrationsrisiken aus
    Abschnitt 6 und die Marktlücke aus Abschnitt 4.
 
 ---
@@ -274,7 +274,7 @@ Der lauffähige Prototyp liegt im Ordner **`absenzen-app/`** (Geschwisterordner 
 In-Memory-Daten (keine Datenbank im Prototyp). Drei Rollen-Bereiche (`lernende`, `lehrperson`,
 `eltern`) teilen sich wiederverwendbare UI-Komponenten; ein einfaches Login mit Session steuert den
 Zugriff. Belege werden im Prototyp **simuliert** (nur der Dateiname wird gespeichert), die Daten
-liegen im Arbeitsspeicher und werden bei Server-Neustart zurückgesetzt – beides bewusst für den
+liegen im Arbeitsspeicher und werden bei Server-Neustart zurückgesetzt - beides bewusst für den
 Prototyp.
 
 ### 8.2 Abgebildeter Workflow (drei Rollen)
@@ -297,36 +297,36 @@ und nachvollziehbarer Verlauf pro Absenz.
 Das UI ist bewusst auf **wenige Klicks bis zur Unterschrift** ausgelegt (Strategie-Ableitung aus
 Abschnitt 2). UX-Entscheidungen:
 
-- **Rollenspezifische Sicht:** Jede Rolle sieht nur ihre relevanten Absenzen und Aktionen –
+- **Rollenspezifische Sicht:** Jede Rolle sieht nur ihre relevanten Absenzen und Aktionen -
   Lernende/Eltern nur die zugeordnete Person, die Lehrperson alle. So bleibt die Oberfläche schlank.
 - **Status auf einen Blick:** farbige **Status-Badges** und eine **Statistik-Übersicht** (Total
   Fehllektionen, offene Fälle, Quote unentschuldigt) machen den Stand sofort erfassbar.
 - **Geführte Aktionen:** Es erscheinen nur die im aktuellen Status erlaubten Buttons/Formulare
   (z. B. „Unterschreiben" nur bei `offen`), was Fehlbedienung verhindert.
 - **Transparenz:** der Verlauf („wer hat wann was getan") und die Fristenanzeige bauen Vertrauen auf
-  (Service statt Überwachung – vgl. Abschnitt 6).
+  (Service statt Überwachung - vgl. Abschnitt 6).
 
 ### 8.4 Screenshots
 
-**Login** – Anmeldung je Rolle (Testzugänge siehe `ZUGANGSDATEN.txt`):
+**Login** - Anmeldung je Rolle (Testzugänge siehe `ZUGANGSDATEN.txt`):
 
-![Login](../screenshots/login.png)
+![Login](../absenzen-app/screenshots/login.png)
 
-**Lernende** (angemeldet als Lena Meier) – sieht nur die eigenen Absenzen mit Status, Frist und Statistik:
+**Lernende** (angemeldet als Lena Meier) - sieht nur die eigenen Absenzen mit Status, Frist und Statistik:
 
-![Lernende](../screenshots/lernende.png)
+![Lernende](../absenzen-app/screenshots/lernende.png)
 
-**Lehrperson** (Beat Brunner) – Gesamtübersicht aller Lernenden, Statistik-Kacheln und Formular „Neue Absenz erfassen":
+**Lehrperson** (Beat Brunner) - Gesamtübersicht aller Lernenden, Statistik-Kacheln und Formular „Neue Absenz erfassen":
 
-![Lehrperson](../screenshots/lehrperson.png)
+![Lehrperson](../absenzen-app/screenshots/lehrperson.png)
 
-**Eltern** (Familie Meier) – Bestätigungsansicht der Absenzen des eigenen Kindes:
+**Eltern** (Familie Meier) - Bestätigungsansicht der Absenzen des eigenen Kindes:
 
-![Eltern](../screenshots/eltern.png)
+![Eltern](../absenzen-app/screenshots/eltern.png)
 
-**Detail / Verlauf** – Statusverlauf einer Absenz (Erfasst → Unterschrieben → Bestätigt → Entschuldigt) inkl. Begründung, Beleg und Audit-Trail:
+**Detail / Verlauf** - Statusverlauf einer Absenz (Erfasst → Unterschrieben → Bestätigt → Entschuldigt) inkl. Begründung, Beleg und Audit-Trail:
 
-![Detail](../screenshots/detail.png)
+![Detail](../absenzen-app/screenshots/detail.png)
 
 ### 8.5 Tests zur technischen Validität
 
@@ -353,7 +353,7 @@ Produktions-Build gelingt, der Zugriffsschutz und das rollenbasierte Daten-Scopi
 und der vollständige Absenzen-Workflow ist über alle vier Statusübergänge lauffähig. Damit ist der
 **Lösungsansatz validiert**: Der durchgängig digitale Prozess (Erfassen → Unterschreiben →
 Bestätigen → Entscheiden) lässt sich technisch umsetzen. Für einen Produktivbetrieb sind die bewusst
-ausgelassenen Teile zu ergänzen – persistente **Datenbank**, echte **Authentifizierung** und
+ausgelassenen Teile zu ergänzen - persistente **Datenbank**, echte **Authentifizierung** und
 sichere **Beleg-Ablage** (vgl. Risiken in Abschnitt 6).
 
 ---
@@ -365,7 +365,7 @@ Wir wählen **Storytelling** und erzählen die Geschichte unserer Persona **Lena
 und *Character Development*) und verkauft die Innovation emotional statt über eine
 Feature-Aufzählung.
 
-**Zeitbudget:** Die Präsentation dauert **2–3 Minuten** (laut Bewertungsblatt, ±30 Sek.). Die
+**Zeitbudget:** Die Präsentation dauert **2-3 Minuten** (laut Bewertungsblatt, ±30 Sek.). Die
 Dramaturgie ist deshalb bewusst knapp gehalten; statt einer langen Live-Demo zeigen wir nur einen
 kurzen Blick auf das Ergebnis (Status-Verlauf im Prototyp).
 
@@ -373,16 +373,16 @@ kurzen Blick auf das Ergebnis (Status-Verlauf im Prototyp).
 
 | Phase (Heldenreise) | Inhalt | Dauer |
 |---|---|---|
-| **Gewohnte Welt** (Hook) | Lena, 17, Informatik-Lernende – Absenzen laufen übers Papier-Büchlein | ~20 s |
+| **Gewohnte Welt** (Hook) | Lena, 17, Informatik-Lernende - Absenzen laufen übers Papier-Büchlein | ~20 s |
 | **Der Ruf / das Problem** | Arzttermin, Büchlein vergessen → die entschuldbare Absenz droht **unentschuldigt** zu werden | ~30 s |
 | **Der Wendepunkt / die Lösung** | eAbsenzen: Lena begründet digital, Eltern bestätigen online, Lehrperson entscheidet transparent | ~30 s |
 | **Bewährung** (kurzer Blick in den Prototyp) | Status-Verlauf einer Absenz: Erfasst → Unterschrieben → Bestätigt → Entschuldigt | ~30 s |
-| **Rückkehr / Erfolg** | Lenas Absenz ist nachvollziehbar entschuldigt – Nutzen für Schule: weniger Aufwand, tiefere Unentschuldigt-Quote | ~25 s |
+| **Rückkehr / Erfolg** | Lenas Absenz ist nachvollziehbar entschuldigt - Nutzen für Schule: weniger Aufwand, tiefere Unentschuldigt-Quote | ~25 s |
 | **Call-to-Action** | „Lasst uns eAbsenzen als Pilot an der BBW Winterthur starten." | ~15 s |
 
 ### 9.2 Bezug zu den Bewertungskriterien (Heldenreise)
 
-- **Engagement:** starker, emotionaler Einstieg über Lenas Dilemma – fesselt von der ersten Sekunde.
+- **Engagement:** starker, emotionaler Einstieg über Lenas Dilemma - fesselt von der ersten Sekunde.
 - **Narrative Structure:** klarer Bogen mit Anfang (gewohnte Welt), Mitte (Problem + Wende) und Ende
   (Erfolg + Aufruf); flüssige Übergänge.
 - **Character Development:** Lena ist eine nachvollziehbare, sympathische Figur; das Publikum
@@ -393,14 +393,14 @@ kurzen Blick auf das Ergebnis (Status-Verlauf im Prototyp).
 - **Johan Stefanes:** Erzähler der Heldenreise + kurzer Blick in den Prototyp.
 - **Julian Scherrer:** Nutzen-/Marktargumentation (KPIs, Geschäftsmodell) + Call-to-Action und Q&A.
 - **Hilfsmittel:** wenige, bildstarke Folien (Lena, Problem, Lösung, Nutzen) und ein kurzer
-  Blick auf den laufenden Prototyp – kein Folientext-Vorlesen.
+  Blick auf den laufenden Prototyp - kein Folientext-Vorlesen.
 
 ---
 
 ## Fazit
 
 Die Idee eAbsenzen wurde von der Problemanalyse (Abschnitt 1) über die strategische und
-marktbezogene Bewertung (Abschnitte 2–7) bis zum lauffähigen Prototyp (Abschnitt 8) und der
+marktbezogene Bewertung (Abschnitte 2-7) bis zum lauffähigen Prototyp (Abschnitt 8) und der
 Präsentationsplanung (Abschnitt 9) durchgängig ausgearbeitet. Der Prototyp belegt die technische
-Machbarkeit, die Analysen zeigen Marktlücke, Nutzen und beherrschbare Risiken – damit ist
+Machbarkeit, die Analysen zeigen Marktlücke, Nutzen und beherrschbare Risiken - damit ist
 eAbsenzen als Pilotprojekt an der BBW Winterthur fundiert begründet.

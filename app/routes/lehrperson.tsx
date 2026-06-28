@@ -36,8 +36,8 @@ export async function action({ request }: Route.ActionArgs) {
     studentName,
     moduleId,
     date,
-    lessons: lessons || "–",
-    teacher: teacher || "–",
+    lessons: lessons || "-",
+    teacher: teacher || "-",
     lessonCount: Number.isFinite(lessonCount) && lessonCount > 0 ? lessonCount : 1,
   });
 
@@ -55,7 +55,7 @@ export default function LehrpersonDashboard({
   return (
     <div className="space-y-6">
       <PageHeader
-        title="Lehrperson – Absenzen"
+        title="Lehrperson - Absenzen"
         subtitle="Absenzen erfassen und über die Entschuldigung entscheiden."
       />
 
@@ -71,17 +71,17 @@ export default function LehrpersonDashboard({
             <span className="label">Modul</span>
             <select name="moduleId" required defaultValue="" className="input">
               <option value="" disabled>
-                – Modul wählen –
+                - Modul wählen -
               </option>
               {modules.map((m) => (
                 <option key={m.id} value={m.id}>
-                  {m.id} – {m.title}
+                  {m.id} - {m.title}
                 </option>
               ))}
             </select>
           </label>
           <Input name="date" label="Datum" type="date" required />
-          <Input name="lessons" label="Lektionen" placeholder="z.B. 3.–4. Lektion" />
+          <Input name="lessons" label="Lektionen" placeholder="z.B. 3.-4. Lektion" />
           <Input
             name="lessonCount"
             label="Anzahl Lektionen"

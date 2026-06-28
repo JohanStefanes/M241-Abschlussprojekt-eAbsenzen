@@ -1,6 +1,5 @@
 // ICT-Module aus dem Modulbaukasten (https://www.modulbaukasten.ch/),
-// Fachrichtung Applikationsentwicklung (Informatiker/in EFZ) + Grundlagenmodule.
-// Repräsentative Auswahl – bei Bedarf an den effektiven Modulplan der BBW anpassen.
+// Auswahl an ICT-Modulen (Applikationsentwicklung), nicht der ganze Modulplan.
 
 export type ModuleField = "Grundlagen" | "Applikationsentwicklung" | "Cloud & Betrieb";
 
@@ -49,5 +48,5 @@ export function getModule(id: string): Module | undefined {
 
 export function moduleLabel(id: string): string {
   const m = getModule(id);
-  return m ? `${m.id} – ${m.title}` : id;
+  return m ? `${m.id} - ${m.title}` : id;
 }
