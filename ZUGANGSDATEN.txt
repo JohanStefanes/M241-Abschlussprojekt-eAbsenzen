@@ -22,15 +22,15 @@ Passwort:      tim2026
 Sieht:         eigene Absenzen von Tim Suter
 
 ------------------------------------------------------------
- ELTERN
+ LEHRBETRIEB
 ------------------------------------------------------------
-Benutzername:  fam.meier
-Passwort:      eltern2026
-Sieht:         Absenzen des Kindes Lena Meier (bestätigen)
+Benutzername:  webhouse
+Passwort:      betrieb2026
+Sieht:         Absenzen von Lena Meier (Lehrbetrieb bestätigt)
 
-Benutzername:  fam.suter
-Passwort:      eltern2026
-Sieht:         Absenzen des Kindes Tim Suter (bestätigen)
+Benutzername:  datatec
+Passwort:      betrieb2026
+Sieht:         Absenzen von Tim Suter (Lehrbetrieb bestätigt)
 
 ------------------------------------------------------------
  LEHRPERSON
@@ -45,7 +45,7 @@ Sieht:         alle Absenzen, erfasst neue, entscheidet final
 ============================================================
 1. Als b.brunner anmelden  -> neue Absenz erfassen (Status: offen)
 2. Als lena.meier anmelden -> begründen + unterschreiben
-3. Als fam.meier anmelden  -> bestätigen
+3. Als webhouse anmelden   -> Lehrbetrieb bestätigt
 4. Als b.brunner anmelden  -> als entschuldigt/unentschuldigt
                               entscheiden
 ============================================================

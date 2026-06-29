@@ -4,7 +4,7 @@ import { statusLabel } from "~/data/absences";
 const STYLES: Record<AbsenceStatus, { dot: string; text: string; bg: string }> = {
   offen: { dot: "bg-slate-400", text: "text-slate-700", bg: "bg-slate-100" },
   lernende_bestaetigt: { dot: "bg-blue-500", text: "text-blue-700", bg: "bg-blue-50" },
-  eltern_bestaetigt: {
+  lehrbetrieb_bestaetigt: {
     dot: "bg-indigo-500",
     text: "text-indigo-700",
     bg: "bg-indigo-50",

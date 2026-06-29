@@ -6,7 +6,7 @@ export type User = {
   password: string;
   role: Role;
   displayName: string;
-  studentName?: string; // für Lernende/Eltern: zugeordnete:r Lernende:r
+  studentName?: string; // für Lernende/Lehrbetrieb: zugeordnete:r Lernende:r
 };
 
 export const users: User[] = [
@@ -25,17 +25,17 @@ export const users: User[] = [
     studentName: "Tim Suter",
   },
   {
-    username: "fam.meier",
-    password: "eltern2026",
-    role: "eltern",
-    displayName: "Familie Meier",
+    username: "webhouse",
+    password: "betrieb2026",
+    role: "lehrbetrieb",
+    displayName: "Webhouse AG",
     studentName: "Lena Meier",
   },
   {
-    username: "fam.suter",
-    password: "eltern2026",
-    role: "eltern",
-    displayName: "Familie Suter",
+    username: "datatec",
+    password: "betrieb2026",
+    role: "lehrbetrieb",
+    displayName: "Datatec GmbH",
     studentName: "Tim Suter",
   },
   {

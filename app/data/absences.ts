@@ -1,11 +1,11 @@
 // Daten liegen im Speicher, keine DB im Prototyp.
 
-export type Role = "lernende" | "lehrperson" | "eltern";
+export type Role = "lernende" | "lehrperson" | "lehrbetrieb";
 
 export type AbsenceStatus =
   | "offen" // Lehrperson hat erfasst
   | "lernende_bestaetigt" // unterschrieben
-  | "eltern_bestaetigt" // Eltern ok
+  | "lehrbetrieb_bestaetigt" // Lehrbetrieb ok
   | "entschuldigt"
   | "unentschuldigt"; // beides: Entscheid Lehrperson
 
@@ -42,7 +42,7 @@ export const CURRENT_STUDENT = "Lena Meier";
 const STATUS_LABELS: Record<AbsenceStatus, string> = {
   offen: "Offen",
   lernende_bestaetigt: "Von Lernende bestätigt",
-  eltern_bestaetigt: "Von Eltern bestätigt",
+  lehrbetrieb_bestaetigt: "Vom Lehrbetrieb bestätigt",
   entschuldigt: "Entschuldigt",
   unentschuldigt: "Unentschuldigt",
 };
@@ -100,7 +100,7 @@ const absences: Absence[] = [
     history: [
       { at: "2026-05-28", by: "lehrperson", action: "Absenz erfasst" },
       { at: "2026-05-29", by: "lernende", action: "Begründung + Beleg erfasst" },
-      { at: "2026-05-30", by: "eltern", action: "Bestätigt" },
+      { at: "2026-05-30", by: "lehrbetrieb", action: "Bestätigt" },
       { at: "2026-06-01", by: "lehrperson", action: "Als entschuldigt entschieden" },
     ],
   },
@@ -142,11 +142,11 @@ const absences: Absence[] = [
     moduleId: "M294",
     teacher: "Frau Keller",
     reason: "Verschlafen",
-    status: "eltern_bestaetigt",
+    status: "lehrbetrieb_bestaetigt",
     history: [
       { at: "2026-06-12", by: "lehrperson", action: "Absenz erfasst" },
       { at: "2026-06-12", by: "lernende", action: "Begründung erfasst" },
-      { at: "2026-06-13", by: "eltern", action: "Bestätigt" },
+      { at: "2026-06-13", by: "lehrbetrieb", action: "Bestätigt" },
     ],
   },
 ];
@@ -208,11 +208,11 @@ export function addDocument(id: string, fileName: string): void {
   });
 }
 
-export function confirmByParent(id: string): void {
+export function confirmByLehrbetrieb(id: string): void {
   const a = getAbsenceById(id);
   if (!a) return;
-  a.status = "eltern_bestaetigt";
-  a.history.push({ at: today(), by: "eltern", action: "Bestätigt" });
+  a.status = "lehrbetrieb_bestaetigt";
+  a.history.push({ at: today(), by: "lehrbetrieb", action: "Bestätigt" });
 }
 
 export function decideByTeacher(
@@ -248,10 +248,10 @@ export function getStats(list: Absence[]): Stats {
 // welche Aktion ist je Rolle und Status erlaubt
 export function nextActionsFor(role: Role, status: AbsenceStatus): string[] {
   if (role === "lernende") return status === "offen" ? ["unterschreiben"] : [];
-  if (role === "eltern")
+  if (role === "lehrbetrieb")
     return status === "lernende_bestaetigt" ? ["bestaetigen"] : [];
   if (role === "lehrperson")
-    return status === "eltern_bestaetigt" ? ["entscheiden"] : [];
+    return status === "lehrbetrieb_bestaetigt" ? ["entscheiden"] : [];
   return [];
 }
 

@@ -6,7 +6,7 @@ function completedCount(status: AbsenceStatus): number {
       return 1;
     case "lernende_bestaetigt":
       return 2;
-    case "eltern_bestaetigt":
+    case "lehrbetrieb_bestaetigt":
       return 3;
     case "entschuldigt":
     case "unentschuldigt":
@@ -21,7 +21,7 @@ export function StatusTimeline({ absence }: { absence: Absence }) {
   const steps = [
     { label: "Erfasst", sub: "Lehrperson" },
     { label: "Unterschrieben", sub: "Lernende" },
-    { label: "Bestätigt", sub: "Eltern" },
+    { label: "Bestätigt", sub: "Lehrbetrieb" },
     { label: isUnexcused ? "Unentschuldigt" : "Entschuldigt", sub: "Lehrperson" },
   ];
 

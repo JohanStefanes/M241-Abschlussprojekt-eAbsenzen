@@ -37,7 +37,7 @@ export async function loader({ request }: Route.LoaderArgs) {
 const ROLE_LABELS: Record<Role, string> = {
   lernende: "Lernende",
   lehrperson: "Lehrperson",
-  eltern: "Eltern",
+  lehrbetrieb: "Lehrbetrieb",
 };
 
 export function Layout({ children }: { children: React.ReactNode }) {

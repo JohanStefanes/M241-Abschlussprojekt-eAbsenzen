@@ -7,7 +7,7 @@ const FILTERS: { value: AbsenceStatus | null; label: string }[] = [
   { value: null, label: "Alle" },
   { value: "offen", label: statusLabel("offen") },
   { value: "lernende_bestaetigt", label: statusLabel("lernende_bestaetigt") },
-  { value: "eltern_bestaetigt", label: statusLabel("eltern_bestaetigt") },
+  { value: "lehrbetrieb_bestaetigt", label: statusLabel("lehrbetrieb_bestaetigt") },
   { value: "entschuldigt", label: statusLabel("entschuldigt") },
   { value: "unentschuldigt", label: statusLabel("unentschuldigt") },
 ];

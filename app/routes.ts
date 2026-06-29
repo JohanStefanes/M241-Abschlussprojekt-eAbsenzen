@@ -12,8 +12,8 @@ export default [
   route("lehrperson", "routes/lehrperson.tsx"),
   route("lehrperson/absenz/:id", "routes/lehrperson.absenz.$id.tsx"),
 
-  route("eltern", "routes/eltern.tsx"),
-  route("eltern/absenz/:id", "routes/eltern.absenz.$id.tsx"),
+  route("lehrbetrieb", "routes/lehrbetrieb.tsx"),
+  route("lehrbetrieb/absenz/:id", "routes/lehrbetrieb.absenz.$id.tsx"),
 
   route("module", "routes/module.tsx"),
 ] satisfies RouteConfig;

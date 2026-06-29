@@ -64,18 +64,18 @@ im Absenzenbüchlein nachtragen und unterschreiben lassen - so wie alle hier."*
 **Zeigt:** Symbol Arzttermin → durchgestrichenes Büchlein → rotes „UNENTSCHULDIGT".
 **Sprechtext:** *„Eines Tages: Arzttermin, alles legitim. Doch das Büchlein bleibt zu Hause, die
 Frist verstreicht - und ihre eigentlich entschuldigte Absenz wird **unentschuldigt**. Kein Einzelfall:
-Zettel gehen verloren, Eltern unterschreiben zu spät, niemand sieht den Stand."*
+Zettel gehen verloren, der Lehrbetrieb unterschreibt zu spät, niemand sieht den Stand."*
 
 ### Folie 4 - Der Wendepunkt / die Lösung (≈ 30 Sek.)
-**Zeigt:** Logo eAbsenzen + 3 Icons (Lernende · Eltern · Lehrperson) mit Pfeilen.
+**Zeigt:** Logo eAbsenzen + 3 Icons (Lernende · Lehrbetrieb · Lehrperson) mit Pfeilen.
 **Sprechtext:** *„Hier kommt eAbsenzen. Lena begründet ihre Absenz digital und unterschreibt mit
-einem Klick. Ihre Eltern bestätigen online. Die Lehrperson entscheidet transparent. Ein
+einem Klick. Der Lehrbetrieb bestätigt online. Die Lehrperson entscheidet transparent. Ein
 durchgängiger Prozess - kein Papier, keine verlorenen Zettel."*
 
 ### Folie 5 - Bewährung / Prototyp (≈ 30 Sek.)
 **Zeigt:** Screenshot **Detail/Verlauf** (Status-Timeline) ODER kurze Live-Demo (siehe Abschnitt 4).
 **Sprechtext:** *„Und das ist keine Idee auf Papier - es läuft. Hier sieht man Lenas Absenz: erfasst,
-unterschrieben, von den Eltern bestätigt, von der Lehrperson entschuldigt. Jeder Schritt
+unterschrieben, vom Lehrbetrieb bestätigt, von der Lehrperson entschuldigt. Jeder Schritt
 nachvollziehbar dokumentiert."*
 
 ### Folie 6 - Erfolg & Nutzen (≈ 25 Sek.)
@@ -110,7 +110,7 @@ npm run dev      # öffnet http://localhost:5173
 |---|---|---|
 | Lehrperson | `b.brunner` | `lehrer2026` |
 | Lernende | `lena.meier` | `lena2026` |
-| Eltern | `fam.meier` | `eltern2026` |
+| Lehrbetrieb | `webhouse` | `betrieb2026` |
 
 **Was zeigen (wenn live):** Als `b.brunner` einloggen → eine Absenz öffnen → den **Status-Verlauf**
 (Erfasst → Unterschrieben → Bestätigt → Entschuldigt) zeigen. Nicht den ganzen Workflow durchklicken
@@ -127,7 +127,7 @@ npm run dev      # öffnet http://localhost:5173
 - **Demo-Rechner:** App lokal laufen lassen (`npm run dev`), Tab vorbereitet. Internet ist **nicht**
   nötig (läuft lokal).
 - **Plan B (falls Technik streikt):** Die 5 Screenshots liegen in `absenzen-app/screenshots/`
-  (`login`, `lernende`, `lehrperson`, `eltern`, `detail`). Einfach als Bilder in die Folien einbauen -
+  (`login`, `lernende`, `lehrperson`, `lehrbetrieb`, `detail`). Einfach als Bilder in die Folien einbauen -
   dann braucht es gar keine Live-Demo.
 - **Generalprobe:** Mindestens 1× mit Stoppuhr durchlaufen → muss in **2:30** passen.
 
@@ -140,8 +140,8 @@ Falls Nachfragen kommen - Kurzantworten (Details in der Doku):
 - **„Wie verdient ihr Geld?"** → Subscription: jährliche Lizenz pro Schule; alternativ Add-on zu
   bestehenden Tools wie LehrerOffice (Doku Abschnitt 7).
 - **„Datenschutz?"** → Arztzeugnisse sind besondere Personendaten; Lösung „Datenschutz by design":
-  minimale Daten, sichere/verschlüsselte Ablage, Eltern-Einwilligung (Abschnitt 6).
-- **„Gibt es das nicht schon?"** → Bestehende Tools erfassen nur, binden aber Lernende **und** Eltern
+  minimale Daten, sichere/verschlüsselte Ablage, Einwilligung der Lernenden (Abschnitt 6).
+- **„Gibt es das nicht schon?"** → Bestehende Tools erfassen nur, binden aber Lernende **und** Lehrbetrieb
   nicht digital ein - das ist die Marktlücke (Abschnitt 4).
 - **„Funktioniert es technisch?"** → Lauffähiger Prototyp (React Router), getestet: Typcheck grün,
   Build ok, Workflow + Zugriffsschutz geprüft (Abschnitt 8.5).
